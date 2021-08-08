@@ -7,7 +7,6 @@ import RAS from '../views/RAS.vue'
 import Activities from '../views/Activities.vue'
 import ContactUs from '../views/ContactUs.vue'
 import MemberShip from '../views/MemberShip.vue'
-import FrequentlyAskedQuestions from '../views/FrequentlyAskedQuestions.vue'
 import About from '../views/About.vue'
 import event from '../views/Event.vue'
 
@@ -48,11 +47,6 @@ const routes = [
     path: '/member-ship',
     name: 'MemberShip',
     component: MemberShip
-  },
-  {
-    path: '/FAQ',
-    name: 'FrequentlyAskedQuestions',
-    component: FrequentlyAskedQuestions
   },
   {
     path:'/event',

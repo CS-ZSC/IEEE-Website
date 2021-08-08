@@ -1,103 +1,73 @@
 <template>
   <div id="activities">
-    <div id="activity-landing">
-      <div id="activity-heading">
-        <h1 data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200" data-aos-easing="linear">
-          Explore what we do
-        </h1>
-      </div>
-    </div>
+    <activity-landing text="Our Activities" background="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
     <section>
       <b-container class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-in">Courses</h2>
         <div
           class="activity-cards"
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-duration="300"
         >
           <b-row
-            v-for="index in Math.ceil(coursesData.length / 3) + 1"
+            v-for="index in coursesData.length"
             :key="index"
           >
-            <b-col sm="12" md="4" v-for="id in 3" :key="id">
-              <Activity
-                class="activity"
-                v-if="getTranslatedId(id, index) < coursesData.length"
-                :title="coursesData[getTranslatedId(id, index)].title"
+              <b-col class="activity-container" md="12" lg="6">
+                <Activity
+                :title="coursesData[index-1].title"
                 :description="
-                  coursesData[getTranslatedId(id, index)].description
+                  coursesData[index-1].description
                 "
-                :date="coursesData[getTranslatedId(id, index)].date"
+                :date="coursesData[index-1].date"
+
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-duration="600"
               />
-            </b-col>
+              </b-col>
           </b-row>
         </div>
       </b-container>
     </section>
+    <hr data-aos="flip-left" data-aos-duration="900">
     <section>
       <b-container class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-down">Workshops</h2>
-        <div class="activity-cards" data-aos="flip-right" data-aos-duration="800">
+        <div class="activity-cards">
           <b-row
-            v-for="index in Math.ceil(workshopData.length / 3) + 1"
+            v-for="index in workshopData.length"
             :key="index"
           >
-            <b-col sm="12" md="4" v-for="id in 3" :key="id">
+            <b-col class="activity-container" md="12" lg="6">
               <Activity
-                class="activity"
-                v-if="getTranslatedId(id, index) < workshopData.length"
-                :title="workshopData[getTranslatedId(id, index)].title"
+                :title="workshopData[index-1].title"
                 :description="
-                  workshopData[getTranslatedId(id, index)].description
+                  workshopData[index-1].description
                 "
-                :date="workshopData[getTranslatedId(id, index)].date"
-                :backgroundColor="'#eee'"
+                :date="workshopData[index-1].date"
+
+                data-aos="flip-right" data-aos-duration="800"
               />
             </b-col>
           </b-row>
         </div>
       </b-container>
     </section>
-    <section>
-      <b-container class="activity-section">
-        <h2
-          class="activity-section-heading"
-          data-aos="fade-right"
-        >
-          Projects
-        </h2>
-        <div class="activity-cards" data-aos="zoom-in-up">
-          <b-row
-            v-for="index in Math.ceil(projectsData.length / 3) + 1"
-            :key="index"
-          >
-            <b-col sm="12" md="4" v-for="id in 3" :key="id">
-              <Activity
-                class="activity"
-                v-if="getTranslatedId(id, index) < projectsData.length"
-                :title="projectsData[getTranslatedId(id, index)].title"
-                :description="
-                  projectsData[getTranslatedId(id, index)].description
-                "
-                :date="projectsData[getTranslatedId(id, index)].date"
-              />
-            </b-col>
-          </b-row>
-        </div>
-      </b-container>
-    </section>
+    <home-footer/>
   </div>
 </template>
 
 <script>
+import ActivityLanding from "../components/activities/ActivityLanding";
 import Activity from "../components/activities/Activity";
 import json from "../../database/database.json";
+import HomeFooter from '@/components/HomeFooter'
 
 export default {
   name: "Activities",
   components: {
+    ActivityLanding,
     Activity,
+    HomeFooter
   },
   data() {
     var courses = json.activities.courses;
@@ -132,27 +102,15 @@ export default {
 </script>
 
 <style scoped>
+hr {
+  border: 3px solid #002855;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
 #activities {
-  background-color: #eee;
-}
-
-#activity-landing {
-  height: 100vh;
-  background-image: url("../assets/activities/background.jpg");
-  background-size: cover;
-  box-shadow: 0 7px 3px -3px #888;
-}
-
-#activity-heading {
-  color: #fff;
-  top: 50%;
-  position: absolute;
-  width: 100%;
-}
-
-#activity-heading h1 {
-  margin: 0;
-  text-align: center;
+  background-color: whitesmoke;
 }
 
 .activity-section {
@@ -160,54 +118,22 @@ export default {
   min-height: 100vh;
 }
 
-section:nth-child(odd) {
-  background-color: #fff;
-  box-shadow: 0px 2px 2px #888, 0px -2px 2px #888;
-}
-
 .activity-section-heading {
   text-align: center;
   margin-bottom: 20px;
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-color: #009ca6;
+  text-decoration-color: #002855;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
+  color: #002855;
+}
+
+.activity-container {
+  margin: auto;
 }
 
 .activity {
   margin: 15px 0;
-}
-
-/* SCROLL ANIMATIONS */
-.before-enter.horizontal-slide {
-  opacity: 0;
-  transform: translateX(-400px);
-  transition: all 0.5s linear;
-}
-
-.before-enter.vertical-slide-up {
-  opacity: 0;
-  transform: translateY(400px);
-  transition: all 0.3s linear;
-}
-
-.before-enter.vertical-slide-down {
-  opacity: 0;
-  transform: translateY(-100px);
-  transition: all 0.5s linear;
-}
-
-.before-enter.fade-in {
-  opacity: 0;
-  transition: all 0.5s linear;
-}
-
-.enter.horizontal-slide,
-.enter.vertical-slide-up,
-.enter.vertical-slide-down,
-.enter.fade-in {
-  opacity: 1;
-  transform: translateX(0px);
 }
 </style>

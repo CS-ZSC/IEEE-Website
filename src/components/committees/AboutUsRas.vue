@@ -1,7 +1,7 @@
 <template>
     <div class="about-section">
       <center class="background">
-        <img src="./cs.png">
+        <img src="./ras.png">
       </center>
         <b-container fluid="xl" class="text-center" >
 
@@ -84,7 +84,7 @@ export default {
     },
     data(){
         return {
-          url: '/home/marimemad/projects/cs_ieee/Web-training/ieee-website/IEEE-Website/src/components/committees/cs.png',
+          url: '/home/marimemad/projects/cs_ieee/Web-training/ieee-website/IEEE-Website/src/components/committees/ras.png',
           Activities: [
             {
               imgLink: "https://ieee-zsb.org/images/Sliders/Final1300800.jpg",
@@ -140,6 +140,7 @@ h3 {
   margin-top:50px;
 }
 img{
+margin-top:55px;
   max-width: 1400px;
 }
 .activity{
