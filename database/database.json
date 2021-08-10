@@ -72,6 +72,7 @@
                 }
                 
             ],
+            "name":"CS",
             "about":{
                 "about-us":"IEEE Computer Society is a professional society of IEEE. Its purpose and scope is \"to advance the theory, practice, and application of computer and information processing science and technology\" and the \"professional standing of its members\".",
                 "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",
@@ -164,6 +165,7 @@
                 }
                 
             ],
+            "name":"RAS",
             "about":{
                 "about-us":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 "vision":"To be the leading provider of technical information, community services, and personalized services in the field of computer science for all university students as well as other local schools and computer science enthusiasts.",

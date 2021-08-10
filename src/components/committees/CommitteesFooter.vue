@@ -3,7 +3,7 @@
         <b-container fluid="xl" class="py-3">
             <b-row >
                 <b-col sm="auto" md="6"> 
-                    <h1 class="left">IEEE CS</h1>
+                    <h1 class="left">IEEE {{data['name']}}</h1>
                     <p>{{data['about']['about-us']}}</p>
                 </b-col>
                 <b-col sm="auto"> 
