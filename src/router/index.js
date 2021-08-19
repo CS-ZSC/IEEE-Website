@@ -9,6 +9,7 @@ import ContactUs from '../views/ContactUs.vue'
 import MemberShip from '../views/MemberShip.vue'
 import About from '../views/About.vue'
 import event from '../views/Event.vue'
+import MutexEvent from '../views/MutexEvent.vue'
 
 Vue.use(VueRouter)
 
@@ -52,7 +53,12 @@ const routes = [
     path:'/event',
     name: 'event',
     component:event
-  }
+  },
+  {
+    path:'/mutex',
+    name: 'MutexEvent',
+    component:MutexEvent
+  },
 ]
 
 const router = new VueRouter({

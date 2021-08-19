@@ -50,7 +50,7 @@ export default {
   }
   .text-card {
     align-self: center;
-    color: white;
+    color: black;
   }
   .img-holder {
     display: flex;
