@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import ExpandingLine from '../../ExpandingLine.vue'
+import ExpandingLine from '../ExpandingLine.vue'
 export default {
   components: { ExpandingLine },
   name: "MutexSpeakers",

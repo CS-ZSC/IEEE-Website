@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HorizantalCard from '../../Home/HomeCards/CardsTemplates/HorizantalCard'
+import HorizantalCard from '../Home/HomeCards/CardsTemplates/HorizantalCard'
 export default {
   name: "MutexBreif",
   components: {

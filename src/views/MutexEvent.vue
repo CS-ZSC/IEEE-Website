@@ -15,12 +15,11 @@
 
 <script>
 
-import MutexHero from '@/components/phoenix_events/Mutex/MutexHero'
-import MutexBreif from '@/components/phoenix_events/Mutex/MutexBreif'
-import MutexHistory from '@/components/phoenix_events/Mutex/MutexHistory'
-/* import ExpandingLine from '@/components/ExpandingLine' */
-import MutexCardsContainer from '../components/phoenix_events/Mutex/MutexCardsContainer.vue'
-import MutexSpeakers from '../components/phoenix_events/Mutex/MutexSpeakers.vue'
+import MutexHero from '@/components/Mutex/MutexHero'
+import MutexBreif from '@/components/Mutex/MutexBreif'
+import MutexHistory from '@/components/Mutex/MutexHistory'
+import MutexCardsContainer from '../components/Mutex/MutexCardsContainer.vue'
+import MutexSpeakers from '../components/Mutex/MutexSpeakers.vue'
 
 
 export default {
@@ -28,7 +27,6 @@ export default {
   components: {
     MutexHero,
     MutexBreif,
-/*     ExpandingLine, */
     MutexHistory,
     MutexCardsContainer,
     MutexSpeakers,

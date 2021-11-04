@@ -1,6 +1,6 @@
 <template>
   <div id="activities">
-    <activity-landing text="Our Activities" background="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
+    <activity-landing text="Our Activities" background="/images/backgrounds/activities.jpg"/>
     <section>
       <b-container class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-in">Courses</h2>

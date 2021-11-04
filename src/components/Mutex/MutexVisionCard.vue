@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import PlainCard from '../../CardsTemplates/PlainCard.vue'
+import PlainCard from '../CardsTemplates/PlainCard.vue'
 export default {
   name: "MutexVisionCard",
   components: {

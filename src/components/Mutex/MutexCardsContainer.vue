@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import ExpandingLine from '../../ExpandingLine.vue'
+import ExpandingLine from '../ExpandingLine.vue'
 import MutexMissionCard from './MutexMissionCard.vue'
 import MutexVisionCard from './MutexVisionCard.vue'
 export default {

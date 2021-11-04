@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
   .card-img-top {
-    max-height: 300px;
+    max-height: 500px;
     object-fit: cover;
   }
   .card {
