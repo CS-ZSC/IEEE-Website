@@ -1,10 +1,12 @@
 <template>
-  <card-with-button :title="title" :text="text" :buttonLink="buttonLink" :imgLink="imgLink" />
+  <card-with-button :title="ras_card.title" :text="ras_card.text" :buttonLink="ras_card.buttonLink" :imgLink="ras_card.imgLink" />
 </template>
 
 <script>
 
 import CardWithButton from './CardsTemplates/CardWithButton'
+import config_data from '../../../../database/database2.json'
+
 export default {
   name: "HomeRASCard",
   components: {
@@ -12,10 +14,7 @@ export default {
   },
   data() {
     return {
-      title: "RAS",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      buttonLink: "#",
-      imgLink: "https://ieee-zsb.org/images/Sliders/Final1300800.jpg",
+      ras_card: config_data.chapters.cards.ras
     }
   }
 }

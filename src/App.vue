@@ -4,14 +4,17 @@
         <transition name="fade" mode="out-in">
           <router-view style="z-index:0; overflow:hidden"></router-view>
         </transition>
+        <home-footer/>
   </div>
 </template>
 
 <script>
 import AppNavigation from './components/AppNavigation.vue'
+import HomeFooter from './components/HomeFooter.vue'
 export default {
   components: { 
-    AppNavigation
+    AppNavigation,
+    HomeFooter
    },
 }
 </script>

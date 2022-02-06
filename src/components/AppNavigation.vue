@@ -12,9 +12,10 @@
           <b-nav-item class="text hover-underline" to="/member-ship">Membership</b-nav-item>
           <b-nav-item class="text hover-underline" to="/cs-committee">CS</b-nav-item>
           <b-nav-item class="text hover-underline" to="/ras-committee">RAS</b-nav-item>
-          <b-nav-item class="text hover-underline" to="/FAQ">FAQ</b-nav-item>
+          <b-nav-item class="text hover-underline" to="/mutex">Mutex</b-nav-item>
+          <!-- <b-nav-item class="text hover-underline" to="/FAQ">FAQ</b-nav-item> -->
           <b-nav-item class="text hover-underline" to="/contact-us"><a>Contact Us</a></b-nav-item>
-          <b-nav-item class="text hover-underline" to="/event"><a>Event</a></b-nav-item>
+          <!-- <b-nav-item class="text hover-underline" to="/event"><a>Event</a></b-nav-item> -->
           <!-- tbh about page isn't needed-->
 <!--           <b-nav-item class="text hover-underline" to="/about"><a>About Us</a></b-nav-item> -->
         </b-navbar-nav>
@@ -56,10 +57,10 @@ export default {
 
 <style scoped>
 .navigation {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 10px 10px -2px rgba(0,0,0,.4);
 }
 .dark-nav {
