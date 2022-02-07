@@ -21,7 +21,7 @@
 <script>
 import PlainCard from '../CardsTemplates/PlainCard.vue'
 import ExpandingLine from '../ExpandingLine.vue'
-import config_data from '../../../database/database2.json'
+import config_data from '../../../database/database'
 
 export default {
   name: "MutexHistory",

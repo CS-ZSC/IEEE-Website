@@ -1,13 +1,44 @@
 {
     "home": {
-        "logo": "",
-        "carousel-imgs": [],
+        "logo": "??",
+        "carousel-imgs": ["/images/backgrounds/homehero.jpg", "/images/backgrounds/alex.png"],
         "board": {
             "chairman": "chairman",
             "vice-chairman": "vice-chairman",
             "secretary": "secretary",
             "treasury": "treasury"
-        }
+        },
+        "cards": {
+            "cs": {
+                "text": "CS text",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
+            },
+            "ras": {
+                "text": "RAS text",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
+            },
+            "events":{
+                "text": "Events text",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
+            }
+        },
+        "partners": [
+            {
+                "name": "valeo",
+                "page-link": "valeo.com",
+                "image-link": "https://picsum.photos/1024/480/?image=10"
+            },
+            {
+                "name": "valeo",
+                "page-link": "valeo.com",
+                "image-link": "https://picsum.photos/1024/480/?image=10"
+            },
+            {
+                "name": "valeo",
+                "page-link": "valeo.com",
+                "image-link": "https://picsum.photos/1024/480/?image=10"
+            }
+        ]
     },
 
 
@@ -238,70 +269,101 @@
         }
     },
     "activities": {
+        "hero-link": "/images/backgrounds/activities.jpg",
         "courses": [
             {
-                "title": "Course 1",
+                "title": "AI",
+                "short-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "/images/cards/cs/AI.png"
             },
             {
-                "title": "Course 2",
+                "title": "Mobile Application",
+                "short-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "/images/cards/cs/mobile_application.png"
             },
             {
-                "title": "Course 3",
+                "title": "Web Development",
+                "short-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "/images/cards/cs/web_development.png"
             },
             {
-                "title": "Course 4",
+                "title": "Deep Learning",
+                "short-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "/images/cards/ras/deep_learning.jpg"
+            },
+            {
+                "title": "ROS",
+                "short-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021",
+                "img-link": "/images/cards/ras/ros.jpg"
+            },
+            {
+                "title": "Embedded Systems",
+                "short-description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
+                "date": "XX/XX/2021",
+                "img-link": "/images/cards/ras/embedded_systems.jpg"
             }
         ],
         "workshops": [
             {
                 "title": "Workshop 1",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
                 "title": "Workshop 2",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
                 "title": "Workshop 3",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
                 "title": "Workshop 4",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             }
         ],
         "projects": [
             {
                 "title": "Project 1",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
                 "title": "Project 2",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
                 "title": "Project 3",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
                 "title": "Project 4",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur accusantium sit vitae est ex repudiandae odio? Vero, iusto? Facilis tempore vel minus et ipsa fugiat? Quisquam fuga architecto harum.",
-                "date": "XX/XX/2021"
+                "date": "XX/XX/2021",
+                "img-link": "https://picsum.photos/1024/480/?image=10"
             }
         ]
     },

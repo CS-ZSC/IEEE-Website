@@ -20,7 +20,7 @@ import about from "../components/events/About";
 import speakers from "../components/events/speakers";
 import partners from "../components/events/partners";
 import gallery from "../components/events/gallery";
-import data from "../../database/database.json";
+import data from "../../database/database";
 
 export default {
   name: 'event',

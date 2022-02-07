@@ -1,23 +1,18 @@
 <template>
   <div id="activities">
-    <activity-landing text="Our Activities" background="/images/backgrounds/activities.jpg"/>
+    <activity-landing text="Our Activities" :background="activitiesHeroLink"/>
     <section>
-      <b-container class="activity-section">
+      <b-container fluid class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-in">Courses</h2>
-        <div
-          class="activity-cards"
-        >
-          <b-row
-            v-for="index in coursesData.length"
-            :key="index"
-          >
-              <b-col class="activity-container" md="12" lg="6">
+          <b-row class="justify-content-center">
+              <b-col class="activity-container" md="4" v-for="index in coursesData.length" :key="index">
                 <Activity
                 :title="coursesData[index-1].title"
                 :description="
                   coursesData[index-1].description
                 "
                 :date="coursesData[index-1].date"
+                :activityImage="coursesData[index-1]['img-link']"
 
                 data-aos="fade-right"
                 data-aos-offset="200"
@@ -25,34 +20,27 @@
               />
               </b-col>
           </b-row>
-        </div>
       </b-container>
     </section>
     <hr data-aos="flip-left" data-aos-duration="900">
     <section>
-      <b-container class="activity-section">
+      <b-container fluid class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-down">Workshops</h2>
-        <div class="activity-cards">
-          <b-row
-            v-for="index in workshopData.length"
-            :key="index"
-          >
-            <b-col class="activity-container" md="12" lg="6">
+        <b-row class="justify-content-center">
+            <b-col md="4" class="activity-container" v-for="index in workshopData.length" :key="index">
               <Activity
                 :title="workshopData[index-1].title"
                 :description="
                   workshopData[index-1].description
                 "
                 :date="workshopData[index-1].date"
-
+                :activityImage="workshopData[index-1]['img-link']"
                 data-aos="flip-right" data-aos-duration="800"
               />
             </b-col>
-          </b-row>
-        </div>
+        </b-row>
       </b-container>
     </section>
-    <home-footer/>
   </div>
 </template>
 
@@ -60,14 +48,12 @@
 import ActivityLanding from "../components/activities/ActivityLanding";
 import Activity from "../components/activities/Activity";
 import json from "../../database/database.json";
-import HomeFooter from '@/components/HomeFooter'
 
 export default {
   name: "Activities",
   components: {
     ActivityLanding,
     Activity,
-    HomeFooter
   },
   data() {
     var courses = json.activities.courses;
@@ -91,6 +77,7 @@ export default {
       coursesData: courses,
       workshopData: workshops,
       projectsData: projects,
+      activitiesHeroLink: json.activities['hero-link']
     };
   },
   methods: {
@@ -134,6 +121,9 @@ hr {
 }
 
 .activity {
-  margin: 15px 0;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
 }
 </style>

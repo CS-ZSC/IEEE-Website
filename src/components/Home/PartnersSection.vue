@@ -1,22 +1,22 @@
 <template>
     <div class="partners-container">
       <div class="partner" v-for="(partner, index) in Partners" :key="index">
-        <a :href="partner.websiteLink">
-          <img :src="partner.imgLink" :alt="partner.name" style="max-width:110px;">
+        <a :href="partner['page-link']">
+          <img :src="partner['image-link']" :alt="partner['name']" style="max-width:110px;">
         </a>
       </div>
     </div>
 </template>
 
-<script>
+<script scoped>
 
-import config_data from '../../../database/database2.json'
+import json from '../../../database/database'
 
 export default {
   name: "HomePartnersSection",
   data () {
     return {
-      Partners: config_data.partners
+      Partners: [...json.home.partners]
     }
   }
 }
