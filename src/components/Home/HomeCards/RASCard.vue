@@ -5,8 +5,7 @@
 <script>
 
 import CardWithButton from './CardsTemplates/CardWithButton'
-import config_data from '../../../../database/database2.json'
-
+import json from '../../../../database/database.json'
 export default {
   name: "HomeRASCard",
   components: {
@@ -14,7 +13,12 @@ export default {
   },
   data() {
     return {
-      ras_card: config_data.chapters.cards.ras
+      ras_card: {
+        "title": "RAS",
+        "text": json['home']['cards']['ras']['text'],
+        "buttonLink": "",
+        "imgLink": json['home']['cards']['ras']['img-link']
+      }
     }
   }
 }

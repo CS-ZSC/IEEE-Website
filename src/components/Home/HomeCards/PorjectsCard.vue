@@ -5,6 +5,7 @@
 <script>
 
 import CardWithButton from './CardsTemplates/CardWithButton'
+
 export default {
   name: "HomeProjectsCard",
   components: {

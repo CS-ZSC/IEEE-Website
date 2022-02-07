@@ -2,10 +2,10 @@
   <card-with-button :title="cs_card.title" :text="cs_card.text" :buttonLink="cs_card.buttonLink" :imgLink="cs_card.imgLink" />
 </template>
 
-<script>
+<script scoped>
 
 import CardWithButton from './CardsTemplates/CardWithButton'
-import config_data from '../../../../database/database2.json'
+import json from '../../../../database/database.json'
 export default {
   name: "HomeCSCard",
   components: {
@@ -13,8 +13,15 @@ export default {
   },
   data() {
     return {
-      cs_card: config_data.chapters.cards.cs
+      cs_card: {
+        "title": "CS",
+        "text": json['home']['cards']['cs']['text'],
+        "buttonLink": "no",
+        "imgLink": json['home']['cards']['cs']['img-link']
+      }
     }
   }
 }
+console.log(json['home']['cards']['cs']['text'])
+
 </script>
