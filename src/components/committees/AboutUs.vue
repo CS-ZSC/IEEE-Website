@@ -1,7 +1,7 @@
 <template>
     <div class="about-section">
       <center class="background">
-        <img :src="img">
+        <img style="max-width:820px;width:100%;" :src="img">
       </center>
         <b-container fluid="xl" class="text-center" >
 

@@ -26,7 +26,7 @@
     <section>
       <b-container fluid class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-down">Workshops</h2>
-        <b-row class="justify-content-center">
+        <b-row class="activities-container">
             <b-col md="4" class="activity-container" v-for="index in workshopData.length" :key="index">
               <Activity
                 :title="workshopData[index-1].title"
@@ -117,7 +117,14 @@ hr {
 }
 
 .activity-container {
-  margin: auto;
+  margin-bottom: 2rem;
+
+}
+.activities-container{
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+
 }
 
 .activity {
