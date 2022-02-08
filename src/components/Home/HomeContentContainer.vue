@@ -8,8 +8,8 @@
         <hr>
       </b-row>
       <b-row>
-        <div data-aos="fade-down">
-          <home-activities/>
+        <div >
+          <home-activities data-aos="fade-down"/>
         </div>
       </b-row>
       <b-row class="justify-content-center pt-5">
@@ -20,7 +20,7 @@
       </b-row>
       <b-row>
         <b-col md="6" class="px-0 px-md-3">
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" style="height:100%">
           <HomeRASCard/>
           </div>
         </b-col>

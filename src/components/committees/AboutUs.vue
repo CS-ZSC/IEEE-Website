@@ -1,7 +1,7 @@
 <template>
     <div class="about-section">
       <center class="background">
-        <img src="./cs.png">
+        <img :src="img">
       </center>
         <b-container fluid="xl" class="text-center" >
 
@@ -76,12 +76,12 @@
 
 <script>
 import CardWithButton from '../Home/HomeCards/CardsTemplates/CardWithButton.vue'
-
 export default {
-    props:['data'],
+    props:['data','img'],
     components: {
       CardWithButton,
     },
+    
     data(){
         return {
           url: '/home/marimemad/projects/cs_ieee/Web-training/ieee-website/IEEE-Website/src/components/committees/cs.png',
@@ -126,6 +126,7 @@ export default {
         }}
 
 }
+
 </script>
 
 <style scoped>
@@ -146,5 +147,6 @@ img{
   max-width: 500px;
   margin: auto;
 }
+
 
 </style>

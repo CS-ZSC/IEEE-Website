@@ -21,7 +21,7 @@
 <script>
 import PlainCard from '../CardsTemplates/PlainCard.vue'
 import ExpandingLine from '../ExpandingLine.vue'
-import config_data from '../../../database/database'
+import json from '../../../database/database'
 
 export default {
   name: "MutexHistory",
@@ -31,7 +31,7 @@ export default {
   },
   data () {
     return {
-      Years : config_data.mutex.years
+      Years : json.mutex.years
     }
   }
 }
