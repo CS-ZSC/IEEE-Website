@@ -26,7 +26,7 @@
     <section>
       <b-container fluid class="activity-section">
         <h2 class="activity-section-heading" data-aos="fade-down">Workshops</h2>
-        <b-row class="justify-content-center">
+        <b-row >
             <b-col md="4" class="activity-container" v-for="index in workshopData.length" :key="index">
               <Activity
                 :title="workshopData[index-1].title"
@@ -117,9 +117,9 @@ hr {
 }
 
 .activity-container {
-  margin: auto;
-}
+  margin-bottom: 2rem;
 
+}
 .activity {
   margin: 2em;
   margin-left: auto;

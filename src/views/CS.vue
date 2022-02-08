@@ -3,7 +3,6 @@
     <carousel v-bind:carousel="data['carousel']"/>
     <about-us v-bind:data="data['about']" v-bind:img="img" />
     <team v-bind:data="data['team']"/>
-    <contact-us v-bind:contact="data['contact-us']"/>
   </div>
 </template>
 
@@ -12,7 +11,6 @@ import Database from '/database/database';
 import AboutUs from '@/components/committees/AboutUs';
 import Carousel from '@/components/committees/Carousel';
 import Team from '@/components/committees/Team';
-import contactus from '@/components/ContactUs/contactus';
 
 
 export default{
@@ -20,8 +18,7 @@ export default{
   components:{
     'about-us':AboutUs,
     'carousel':Carousel,
-    'team':Team,
-    'contact-us':contactus
+    'team':Team
 
   },
 

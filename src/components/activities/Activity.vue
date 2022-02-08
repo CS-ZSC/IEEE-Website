@@ -1,10 +1,9 @@
 <template>
-  <div class="activity" :style="backgroundStyles(backgroundColor)">
+  <div class="activity h-100" :style="backgroundStyles(backgroundColor)">
     <div class="activity-content">
-      <p class="activity-duration">Date: {{ date }}</p>
       <img class="activity-image" :src="activityImage" :alt="activityImageAlt">
       <h3 class="activity-title">{{ title }}</h3>
-      <p class="activity-description">{{ description }}</p>
+      <p class="activity-description p-3">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -53,10 +52,11 @@ export default {
   background-size: cover;
   padding: 20px;
   border-radius: 5px;
-  height: 80vh;
   color: #002855;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
+
 
 .activity-duration {
   text-align: right;

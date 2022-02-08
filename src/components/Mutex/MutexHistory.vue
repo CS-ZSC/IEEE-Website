@@ -10,8 +10,8 @@
         </b-col>
       </b-row>
       <b-row class="pt-3">
-        <b-col class="pb-3" v-for="(year, index) in Years" :key="index">
-          <plain-card class="card" :title="year.title" :imgLink="year.imgLink" :text="year.text"/>
+        <b-col class="pb-3" v-for="(year, index) in Years" :key="index" v-on:click="select" :id="`year-${index}`">
+          <plain-card class="card h-100" v-bind:class="{ 'active' : index==selected }" :title="year.title" :imgLink="`./images/cards/mutex/mutex_${year.year}.jpg`" :text="year.text"/>
         </b-col>
       </b-row>
     </b-container>
@@ -31,7 +31,15 @@ export default {
   },
   data () {
     return {
+      selected:0,
       Years : json.mutex.years
+    }
+  },
+  methods:{
+    select: function(event){
+      let currentIndex = event.currentTarget.id.replace("year-","")
+      this.selected = currentIndex
+      this.$emit('selected',currentIndex)
     }
   }
 }
@@ -48,5 +56,23 @@ export default {
 }
 .card {
   min-width: 300px;
+  transition: box-shadow .3s;
+
 }
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: rgba(16, 95, 212, 0.35) 0px 5px 15px;
+}
+
+
+
+.active{
+  box-shadow: rgb(16, 94, 212) 0px 5px 15px;
+}
+.active:hover{
+  box-shadow: rgb(16, 94, 212) 0px 5px 15px;
+}
+
+
 </style>
