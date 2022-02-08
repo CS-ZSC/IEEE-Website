@@ -5,7 +5,8 @@
 <script scoped>
 
 import CardWithButton from './CardsTemplates/CardWithButton'
-import json from '../../../../database/database.json'
+import json from '../../../../database/database'
+const {name ,img,about } = json.committees.cs
 export default {
   name: "HomeCSCard",
   components: {
@@ -13,12 +14,19 @@ export default {
   },
   data() {
     return {
-      cs_card: {
-        "title": "CS",
-        "text": json['home']['cards']['cs']['text'],
-        "buttonLink": "no",
-        "imgLink": json['home']['cards']['cs']['img-link']
+      cs_card:{
+        title:name,
+        text:about['about-us'],
+        buttonLink:`${name.toLowerCase()}-committee`,
+        imgLink:require('../../committees/'+img)
+
       }
+      // cs_card: {
+      //   "title": "CS",
+      //   "text": json['home']['cards']['cs']['text'],
+      //   "buttonLink": "no",
+      //   "imgLink": json['home']['cards']['cs']['img-link']
+      // }
     }
   }
 }

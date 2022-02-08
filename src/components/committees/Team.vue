@@ -53,4 +53,8 @@ h3 {
     font-weight: bold;
 }
 
+.avatar-info p{
+    text-transform: capitalize;
+}
+
 </style>

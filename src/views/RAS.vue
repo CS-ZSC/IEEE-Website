@@ -1,22 +1,33 @@
 <template>
   <div class="ras">
-    <about-us v-bind:data="data['about']" />
+    <carousel v-bind:carousel="data['carousel']"/>
+    <about-us v-bind:data="data['about']" v-bind:img="img" />
+    <team v-bind:data="data['team']"/>
     <contact-us v-bind:contact="data['contact-us']"/>
   </div>
 </template>
 
 <script>
 import Database from '/database/database';
-import AboutUsRas from '@/components/committees/AboutUsRas';
+import AboutUs from '@/components/committees/AboutUs';
+import Carousel from '@/components/committees/Carousel';
+import contactus from '@/components/ContactUs/contactus';
+import Team from '@/components/committees/Team';
+
 export default{
 
   components:{
-    'about-us':AboutUsRas,
+    'about-us':AboutUs,
+    'carousel':Carousel,
+    'team':Team,
+    'contact-us':contactus
   },
 
   data(){
     return{
       data: Database.committees.ras,
+      img:require('../components/committees/'+Database.committees.ras.img)
+
 
     }
   }

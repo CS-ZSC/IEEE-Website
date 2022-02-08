@@ -90,7 +90,7 @@
                         <strong>Email</strong><br>
                         <a href="mailto:info@ieee-zsb.org">info@ieee-zsb.org</a><br>
                     </address>
-                    <follow-us />
+                    <FollowUs />
                 </form>
             </div>
         </div>
@@ -100,9 +100,13 @@
 
 <script>
 import emailjs from 'emailjs-com';
+import FollowUs from "../FollowUs.vue"
 
 export default {
     name:'contactus',
+    components:{
+        FollowUs
+    },
     data() {
         return {
         name: '',

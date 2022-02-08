@@ -29,6 +29,7 @@
 
 <script>
 export default {
+    name:'Carousel',
     props:['carousel'],
     data() {
       return {

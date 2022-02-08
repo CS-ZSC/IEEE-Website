@@ -1,13 +1,13 @@
 
 <template lang="html">
-  <div class="faq">>
+  <div class="faq">
     <center class="background">
       <img :src="url">
     </center>
 
     <section class="container" >
-      <div class="card" v-for="item in items" v-bind:key="item.id" >
-        <div class="question" :id='item.id' v-on:click="show(item.id)">
+      <div class="card" v-for="(item,index) in items" v-bind:key="index+1+'questions'" >
+        <div class="question" :id='index+1+"questions"' v-on:click="show(index+1+'questions')">
           <b-icon icon="question-circle" class='icon' ></b-icon>
           <h3>{{item.q}}</h3>
         </div>
@@ -15,34 +15,17 @@
           <p>{{item.a}}</p>
         </div>
       </div>
-
-
     </section>
   </div>
 </template>
 
 <script>
+import json from '../../../database/database.json'
 export default {
   name: 'question',
   data(){
     return{
-      items:[
-        {
-          id:1,
-          q:'Lorem Ipsum',
-          a:'Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.'
-        },
-        {
-          id:2,
-          q:'Lorem Ipsum',
-          a:'Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.'
-        },
-        {
-          id:3,
-          q:'Lorem Ipsum',
-          a:'Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.'
-        },
-      ],
+      items:json["faq"],
       url:'https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-760x400.png',
     }
   },
@@ -50,7 +33,7 @@ export default {
   methods: {
     show(id){
       let question=document.getElementsByClassName('question');
-
+      id = parseInt(id.replace("questions",""))
       for(let i =0;i< question.length; i++){
         if (i==id-1){
           question[i].classList.toggle('active');
