@@ -11,7 +11,7 @@
     <div class="speakers-container">
       <div v-for="(speaker, index) in Speakers" :key="index">
         <figure data-aos-delay="500" data-aos="fade-in" data-aos-once="true" class="figure">
-          <img :src="speaker.imgSrc" class="figure-img img-fluid rounded" :alt="speaker.details"/>
+          <img :src="speaker.imgSrc" class="figure-img img-fluid rounded"  :alt="speaker.details"/>
           <figcaption class="figure-caption">{{speaker.details}}</figcaption>
         </figure>
       </div>
@@ -21,55 +21,22 @@
 
 <script>
 import ExpandingLine from '../ExpandingLine.vue'
+import json from '../../../database/database'
 export default {
   components: { ExpandingLine },
+  props:['active'],
   name: "MutexSpeakers",
   data() {
     return {
-      Speakers: [
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-        {
-          details: "linus tech tips",
-          imgSrc: "/images/linus.jpg",
-        },
-      ]
+      Speakers: json.mutex.years[this.active].Speakers
+    }
+  },
+  watch:{
+    active(val){
+      this.Speakers = json.mutex.years[val].Speakers
     }
   }
+  
 }
 </script>
 

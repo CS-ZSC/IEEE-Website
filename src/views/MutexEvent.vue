@@ -6,9 +6,9 @@
     <mutex-cards-container/>
     <div class="space"/>
     <div class="space"/>
-    <mutex-history/>
+    <mutex-history @selected="updatePartners"/>
     <div class="space"/>
-    <mutex-speakers/>
+    <mutex-speakers :active="selectedEvent"/>
     <div class="space"/>
   </div>
 </template>
@@ -31,6 +31,17 @@ export default {
     MutexCardsContainer,
     MutexSpeakers,
   },
+  data(){
+    return {
+      selectedEvent:0
+    }
+  },
+  methods:{
+    updatePartners:function (index){
+      this.selectedEvent = index
+
+    }
+  }
 }
 </script>
 

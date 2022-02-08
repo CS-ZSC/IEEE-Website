@@ -33,7 +33,7 @@
             },
             {
                 "name": "valeo",
-                "page-link": "valeo.com",
+                "page-link": "https://www.valeo.com",
                 "image-link": "https://picsum.photos/1024/480/?image=10"
             },
             {
@@ -390,9 +390,55 @@
     "contact-us": {},
     "mutex": {
         "years": [
-            2018,
-            2019,
-            2020
+            {
+                "title": "Mutex 2018",
+                "year": 2018,
+                "text": "Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in.",
+                "Speakers": [
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/linus.jpg"
+                    },
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/cards/cs/cs.png"
+                    },
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/linus.jpg"
+                    },
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/linus.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Mutex 2019",
+                "year": 2019,
+                "text": "Finished her are its honoured drawings nor. Pretty see mutual thrown all not edward ten. Particular an boisterous up he reasonably frequently. Several any had enjoyed shewing studied two. Up intention remainder sportsmen behaviour ye happiness.",
+                "Speakers": [
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/linus.jpg"
+                    },
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/cards/cs/cs.png"
+                    }
+                ]
+            },
+            {
+                "title": "Mutex 2020",
+                "year": 2020,
+                "text": "Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you.",
+                "Speakers": [
+                    {
+                        "details": "linus tech tips",
+                        "imgSrc": "/images/linus.jpg"
+                    }
+                ]
+            }
         ]
     },
     "social": [

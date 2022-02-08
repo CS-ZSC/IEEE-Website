@@ -65,7 +65,7 @@
         <b-container fluid='xl'>
           <b-row>
             <b-col md="4" class="py-2 px-0 px-md-3 activity" v-for="(activity, index) in Activities" :key="index">
-                <card-with-button :title="activity.title" :text="activity.text" :buttonLink="activity.pageLink" :imgLink="activity.imgLink" />
+                <PlainCard :title="activity.title" :text="activity.text" :imgLink="activity.imgLink" />
             </b-col>
           </b-row>
         </b-container>
@@ -75,11 +75,11 @@
 </template>
 
 <script>
-import CardWithButton from '../Home/HomeCards/CardsTemplates/CardWithButton.vue'
+import PlainCard from '../CardsTemplates/PlainCard.vue'
 export default {
     props:['data','img'],
     components: {
-      CardWithButton,
+      PlainCard,
     },
     
     data(){

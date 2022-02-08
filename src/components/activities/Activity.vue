@@ -1,10 +1,9 @@
 <template>
   <div class="activity h-100" :style="backgroundStyles(backgroundColor)">
     <div class="activity-content">
-      <p class="activity-duration">Date: {{ date }}</p>
       <img class="activity-image" :src="activityImage" :alt="activityImageAlt">
       <h3 class="activity-title">{{ title }}</h3>
-      <p class="activity-description">{{ description }}</p>
+      <p class="activity-description p-3">{{ description }}</p>
     </div>
   </div>
 </template>

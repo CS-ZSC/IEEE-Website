@@ -6,7 +6,7 @@
           <div class="contact-us">
             <h3>CONTACT US</h3>
             <div class="contact-info">
-              email: cs@ieee-zsb.org
+              email: info@ieee-zsb.org
             </div>
           </div>
         </b-col>
@@ -14,14 +14,9 @@
           <div class="follow-us">
             <h3>FOLLOW US</h3>
             <div class="follow-links">
-              <span class="link">
-                <a href="https://www.facebook.com/IEEE.CS.ZSC/">
-                  <b-icon-facebook/>
-                </a>
-              </span>
-              <span class="link">
-                <a href="https://www.linkedin.com/company/ieee-cs-zagazig-student-chapter/about/">
-                  <b-icon-linkedin/>
+              <span v-for="socialLink in socials" :key="socialLink.icon" class="link">
+                <a :href="socialLink.link">
+                  <b-icon :icon="socialLink.icon" />
                 </a>
               </span>
             </div>
@@ -33,8 +28,14 @@
 </template>
 
 <script>
+import json from '../../database/database'
 export default {
   name: "HomeFooter",
+  data(){
+    return {
+      socials:json.social
+    }
+  }
 }
 </script>
 
