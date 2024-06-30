@@ -3,7 +3,7 @@ name: Build and Serve Vue Project
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-serve:
