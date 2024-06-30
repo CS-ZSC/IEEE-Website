@@ -8,7 +8,7 @@
       background="#ababab"
       img-height="1024"
       img-width="480"
-      style="text-shadow: 1px 1px 2px #333;"
+      style="text-shadow: 1px 1px 2px #333; max-height: 95vh;"
     >
       <div v-for="(carousel_image, index) in carousel_images" :key="index">
         <b-carousel-slide :img-src="carousel_image" ></b-carousel-slide>

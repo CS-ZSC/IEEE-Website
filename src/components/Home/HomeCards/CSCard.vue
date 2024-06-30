@@ -17,7 +17,7 @@ export default {
       cs_card:{
         title:name,
         text:about['about-us'],
-        buttonLink:`${name.toLowerCase()}-committee`,
+        buttonLink:`cs-committee`,
         imgLink:require('../../committees/'+img)
 
       }
@@ -30,6 +30,5 @@ export default {
     }
   }
 }
-console.log(json['home']['cards']['cs']['text'])
 
 </script>

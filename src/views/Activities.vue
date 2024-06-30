@@ -1,46 +1,26 @@
 <template>
-  <div id="activities">
+  <div class="justify-content-center ">
     <activity-landing text="Our Activities" :background="activitiesHeroLink"/>
-    <section>
-      <b-container fluid class="activity-section">
-        <h2 class="activity-section-heading" data-aos="fade-in">Courses</h2>
-          <b-row class="justify-content-center">
-              <b-col class="activity-container" md="4" v-for="index in coursesData.length" :key="index">
-                <Activity
-                :title="coursesData[index-1].title"
-                :description="
-                  coursesData[index-1].description
-                "
-                :date="coursesData[index-1].date"
-                :activityImage="coursesData[index-1]['img-link']"
-
-                data-aos="fade-right"
-                data-aos-offset="200"
-                data-aos-duration="600"
-              />
-              </b-col>
-          </b-row>
-      </b-container>
-    </section>
-    <hr data-aos="flip-left" data-aos-duration="900">
-    <section>
-      <b-container fluid class="activity-section">
-        <h2 class="activity-section-heading" data-aos="fade-down">Workshops</h2>
-        <b-row class="justify-content-center">
-            <b-col md="4" class="activity-container" v-for="index in workshopData.length" :key="index">
-              <Activity
-                :title="workshopData[index-1].title"
-                :description="
-                  workshopData[index-1].description
-                "
-                :date="workshopData[index-1].date"
-                :activityImage="workshopData[index-1]['img-link']"
-                data-aos="flip-right" data-aos-duration="800"
-              />
-            </b-col>
-        </b-row>
-      </b-container>
-    </section>
+    <b-container fluid class="activity-section card-c cards-container " mx="0" style="margin-top: 5em">
+      <h2 class="activity-section-heading justify-content-center" data-aos="fade-in">Events & Workshops</h2>
+      <b-row data-aos="flip-left" class="pb-2">
+        <hr>
+      </b-row>
+      <b-row class="justify-content-center">
+        <b-col md="4" class="py-2 px-0 px-md-3 activity" v-for="(event, index) in eventsData" :key="index">
+          <Activity
+              :title="event.title"
+              :description="event.description"
+              :date="event.date"
+              :activityImage="event['img-link']"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="600"
+          />
+        </b-col>
+      </b-row>
+    </b-container>
+    <hr data-aos="flip-left " data-aos-duration="900" style="margin-top: 3em">
   </div>
 </template>
 
@@ -56,34 +36,12 @@ export default {
     Activity,
   },
   data() {
-    var courses = json.activities.courses;
-    var workshops = json.activities.workshops;
-    var projects = json.activities.projects;
-
-    var i = 0;
-    for (i = 0; i < courses.length; i++) {
-      courses[i].id = i;
-    }
-
-    for (i = 0; i < workshops.length; i++) {
-      workshops[i].id = i;
-    }
-
-    for (i = 0; i < projects.length; i++) {
-      projects[i].id = i;
-    }
+    const events = json.activities.events;
 
     return {
-      coursesData: courses,
-      workshopData: workshops,
-      projectsData: projects,
+      eventsData: events,
       activitiesHeroLink: json.activities['hero-link']
     };
-  },
-  methods: {
-    getTranslatedId(id, index) {
-      return id - 1 + (index - 1) * 3;
-    },
   },
 };
 </script>
@@ -100,30 +58,10 @@ hr {
   background-color: whitesmoke;
 }
 
-.activity-section {
-  padding: 50px 0;
-  min-height: 100vh;
-}
-
 .activity-section-heading {
   text-align: center;
-  margin-bottom: 20px;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #002855;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 10px;
   color: #002855;
-}
-
-.activity-container {
-  margin: auto;
-}
-
-.activity {
-  margin: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
+  font-size: 2em;
+  font-weight: bold;
 }
 </style>

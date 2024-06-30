@@ -10,11 +10,11 @@
 
 <script>
 
-import CardWithButton from './HomeCards/CardsTemplates/CardWithButton.vue'
-import json from '../../../database/database'
+import CardWithButton from '../Home/HomeCards/CardsTemplates/CardWithButton.vue'
+import json from '../../../database/database.json'
 
 export default {
-  name: "HomeActivites",
+  name: "Tracks",
   components: {
     CardWithButton,
   },

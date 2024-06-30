@@ -1,10 +1,10 @@
 <template>
-  <div class="activity" :style="backgroundStyles(backgroundColor)">
-    <div class="activity-content">
-      <p class="activity-duration">Date: {{ date }}</p>
-      <img class="activity-image" :src="activityImage" :alt="activityImageAlt">
-      <h3 class="activity-title">{{ title }}</h3>
-      <p class="activity-description">{{ description }}</p>
+  <div class="activity h-100 ">
+    <p class="activity-duration" style="text-align: left;">Date: {{ date }}</p>
+    <img class="card-img-top" style="object-fit: cover;" :src="activityImage" :alt="activityImageAlt">
+    <div class="activity-content d-flex flex-column justify-content-start">
+      <h5 class="activity-title">{{ title }}</h5>
+      <div class="text-justify flex-grow-1 fade-text" v-html="description"></div>
     </div>
   </div>
 </template>
@@ -50,12 +50,17 @@ export default {
 
 <style scoped>
 .activity {
+  background-color: transparent;
   background-size: cover;
-  padding: 20px;
-  border-radius: 5px;
-  height: 80vh;
+  padding: 2vh;
+  border-radius: 1%;
+  min-height: 100vh;
   color: #002855;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  margin: 2em 1em;
+  min-width: 45vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .activity-duration {
@@ -66,7 +71,12 @@ export default {
   text-decoration-thickness: 1px;
   text-underline-offset: 10px;
 }
-
+.activity-content {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1%;
+  margin-top: 1em;
+}
 .activity-image {
   height: 30vh;
   width: 100%;
@@ -80,5 +90,4 @@ export default {
 .activity-description {
   margin-top: 20px;
 }
-
 </style>
