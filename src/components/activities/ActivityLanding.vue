@@ -1,51 +1,29 @@
 <template>
-    <div id="activity-landing" :style="backgroundImage(background)">
-      <div id="activity-heading">
-        <h1 data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200" data-aos-easing="linear">
-          {{text}}
-        </h1>
+  <div class="mb-5">
+    <b-carousel
+      id="carousel-1"
+      :interval="5000"
+      background="#ababab"
+      img-height="1024"
+      img-width="480"
+      style="text-shadow: 1px 1px 2px #333; max-height: 95vh;"
+    >
+      <div v-for="(landing, index) in landings" :key="index">
+        <b-carousel-slide :img-src="landing" ></b-carousel-slide>
       </div>
-    </div>
+    </b-carousel>
+  </div>
 </template>
 
-<script>
+<script scoped>
+import json from '../../../database/database'
+
 export default {
   name: "ActivityLanding",
-  props: {
-      text: {
-          type: String
-      },
-      background: {
-          type: String
-      }
-  },
-  methods: {
-    backgroundImage(background) {
-        console.log(background)
-      return {
-        "background-image": `url(${background})`,
-      };
+  data() {
+    return {
+      landings: [json.activities["hero-link"]]
     }
-  },
-};
+  }
+}
 </script>
-
-<style scoped>
-#activity-landing {
-  height: 100vh;
-  background-size: cover;
-  /* box-shadow: 0 7px 25px 0px #000; */
-}
-
-#activity-heading {
-  color: #fff;
-  top: 50%;
-  position: absolute;
-  width: 100%;
-}
-
-#activity-heading h1 {
-  margin: 0;
-  text-align: center;
-}
-</style>

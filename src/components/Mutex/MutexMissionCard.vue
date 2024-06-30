@@ -12,8 +12,8 @@ export default {
   data() {
     return {
       title: "Our Mission",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      imgLink: "/images/Zag.jpg",
+      text: "Establishing a link between leading companies and organizations in the latest technologies, or those that support the tech ecosystem, and our community’s students, engineers, startups, and tech enthusiasts through a series of talks, training sessions, and workshops. Additionally, we aim to get students accustomed to competitions, fostering a competitive spirit and practical experience in real-world challenges.\n",
+      imgLink: "./images/backgrounds/mutex-mission.png",
     }
   }
 }

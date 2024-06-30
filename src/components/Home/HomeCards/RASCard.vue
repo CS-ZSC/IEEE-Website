@@ -17,7 +17,7 @@ export default {
       ras_card:{
         title:name,
         text:about['about-us'],
-        buttonLink:`${name.toLowerCase()}-committee`,
+        buttonLink:`ras-committee`,
         imgLink:require('../../committees/'+img)
 
       }

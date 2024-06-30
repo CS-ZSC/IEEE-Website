@@ -12,8 +12,8 @@ export default {
   data() {
     return {
       title: "Our Vision",
-      text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      imgLink: "/images/Zag.jpg",
+      text: "Our vision is to bridge the gap between the latest technological trends and community awareness. We aim to empower individuals with the knowledge and skills to thrive in a rapidly evolving tech landscape, creating a well-informed and innovative community.",
+      imgLink: "./images/backgrounds/mutex-vision.png",
     }
   }
 }

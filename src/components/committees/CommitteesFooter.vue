@@ -15,9 +15,9 @@
                         {{data['contact-us'].email}}
                     </p>
                     <a v-bind:href="data['contact-us'].facebook" target="_blank"><b-icon icon="facebook" font-scale="2" class="icon mb-3 m-1"></b-icon></a>
-                    <a v-bind:href="data['contact-us'].facebook" target="_blank"><b-icon icon="twitter" font-scale="2" class="icon mb-3 m-1"></b-icon></a>
-                    <a v-bind:href="data['contact-us'].facebook" target="_blank"><b-icon icon="linkedin" font-scale="2" class="icon mb-3 m-1"></b-icon></a>
-                    <a v-bind:href="data['contact-us'].facebook" target="_blank"><b-icon icon="github" font-scale="2" class="icon mb-3 m-1"></b-icon></a>
+                    <a v-bind:href="data['contact-us'].twitter" target="_blank"><b-icon icon="twitter" font-scale="2" class="icon mb-3 m-1"></b-icon></a>
+                    <a v-bind:href="data['contact-us'].linkedin" target="_blank"><b-icon icon="linkedin" font-scale="2" class="icon mb-3 m-1"></b-icon></a>
+<!--                    <a v-bind:href="data['contact-us'].github" target="_blank"><b-icon icon="github" font-scale="2" class="icon mb-3 m-1"></b-icon></a>-->
 
                 </b-col>
 
