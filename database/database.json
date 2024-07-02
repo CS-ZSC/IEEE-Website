@@ -8,17 +8,17 @@
     ],
     "board": [
       {
-        "position": "chairman",
+        "position": "Chairman",
         "name": "Abdullah Hussein",
         "img": "./images/committees/Team/EB/chairman.jpg"
       },
       {
-        "position": "vice-chairman",
+        "position": "Vice-chairman",
         "name": "Abdulrahman Omar",
         "img": "./images/committees/Team/EB/vicechairman.jpg"
       },
       {
-        "position": "secretary",
+        "position": "Secretary",
         "name": "Reem Elsingaby",
         "img": "./images/committees/Team/EB/secretary.JPG"
       },
@@ -28,7 +28,7 @@
         "img": "./images/committees/Team/EB/Branding Officer.jpg"
       },
       {
-        "position": "treasury",
+        "position": "Treasurer",
         "name": "Shahd Elbendary",
         "img": "./images/committees/Team/EB/treasury.jpg"
       }
