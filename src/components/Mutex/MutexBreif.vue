@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       title: "About Mutex",
-      imgLink: "./images/backgrounds/mutex_about.png",
+      imgLink: "./images/backgrounds/Mutex/mutex_about.png",
       imgAlt: "IEEE Mutex logo",
       text: `MUTEX is the biggest annual technological event in the Delta region, hosted by IEEE Zagazig SB. The event focuses on introducing the latest technologies to the audience and setting a clear path for them to follow. This year, MUTEX is different. In addition to sessions and workshops on the latest technologies, we will have competitions in three different fields: a Problem Solving Contest, a Formula Firefighting Robot Competition, and a Smart Homes Hackathon.`,
     }

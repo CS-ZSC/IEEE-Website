@@ -2,7 +2,7 @@
   <div class="mutex-history">
     <b-container class="container">
       <b-row data-aos="fade-up">
-        <h2 class="centered-text">Our History</h2>
+        <h2 class="centered-text font-weight-bold">Our History</h2>
       </b-row>
       <b-row>
         <b-col>
@@ -11,7 +11,7 @@
       </b-row>
       <b-row class="pt-3">
         <b-col class="pb-3" v-for="(year, index) in Years" :key="index">
-          <plain-card class="card" :title="year.title" :imgLink="year.imgLink" :text="year.text"/>
+          <plain-card class="card text-left" :title="year.title" :imgLink="year.imgLink" :text="year.text"/>
         </b-col>
       </b-row>
     </b-container>

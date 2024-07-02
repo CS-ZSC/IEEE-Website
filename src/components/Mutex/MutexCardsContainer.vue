@@ -1,7 +1,7 @@
 <template>
   <b-container fluid class="cards-container" mx="0">
     <b-row data-aos="fade-up">
-      <h2 class="centered-text">Goals</h2>
+      <h2 class="centered-text font-weight-bold">Goals</h2>
     </b-row>
     <b-row >
       <b-col>
