@@ -8,27 +8,27 @@
     ],
     "board": [
       {
-        "position": "chairman",
+        "position": "Chairman",
         "name": "Abdullah Hussein",
         "img": "./images/committees/Team/EB/chairman.jpg"
       },
       {
-        "position": "vice-chairman",
+        "position": "Vice-chairman",
         "name": "Abdulrahman Omar",
         "img": "./images/committees/Team/EB/vicechairman.jpg"
       },
       {
-        "position": "secretary",
+        "position": "Secretary",
         "name": "Reem Elsingaby",
         "img": "./images/committees/Team/EB/secretary.JPG"
       },
-            {
+      {
         "position": "Branding Officer",
         "name": "Mohamed Askora",
         "img": "./images/committees/Team/EB/Branding Officer.jpg"
       },
       {
-        "position": "treasury",
+        "position": "Treasurer",
         "name": "Shahd Elbendary",
         "img": "./images/committees/Team/EB/treasury.jpg"
       }
@@ -69,11 +69,11 @@
       "img": "./images/backgrounds/vision.png"
     },
     "mission": {
-        "text": "Our mission begins with a deep understanding of the contemporary job market's demands and the skills required from graduates to meet those demands. We then strive to bridge the skills gap by establishing a sustainable program that addresses the ever-expanding divide between graduates' skillsets and the job market's requirements, particularly those skills that the university curriculum may overlook.",
-        "img": "./images/backgrounds/mission.png"
-        },
-    "about":"A legacy of over 25 years positions IEEE Zagazig University Student Branch (ZSB) as one of the first and most impactful in Egypt. We extend our reach beyond Zagazig University, serving students nationwide through workshops, events, and initiatives that explore technology's influence on all aspects of life, from its latest applications to its intersection with business in our signature \"MUTEX\" event, the Delta region's largest gathering focused on technology and entrepreneurship. Our commitment goes beyond technical expertise, fostering well-rounded graduates through six managerial committees and three technical chapters, alongside the Women In Engineering (WIE) Affinity Group. This comprehensive approach creates a professional environment where students can cultivate essential skills like leadership, teamwork, and management, ensuring they're prepared for the demands of the modern workforce."
+      "text": "Our mission begins with a deep understanding of the contemporary job market's demands and the skills required from graduates to meet those demands. We then strive to bridge the skills gap by establishing a sustainable program that addresses the ever-expanding divide between graduates' skillsets and the job market's requirements, particularly those skills that the university curriculum may overlook.",
+      "img": "./images/backgrounds/mission.png"
     },
+    "about": "A legacy of over 25 years positions IEEE Zagazig University Student Branch (ZSB) as one of the first and most impactful in Egypt. We extend our reach beyond Zagazig University, serving students nationwide through workshops, events, and initiatives that explore technology's influence on all aspects of life, from its latest applications to its intersection with business in our signature \"MUTEX\" event, the Delta region's largest gathering focused on technology and entrepreneurship. Our commitment goes beyond technical expertise, fostering well-rounded graduates through six managerial committees and three technical chapters, alongside the Women In Engineering (WIE) Affinity Group. This comprehensive approach creates a professional environment where students can cultivate essential skills like leadership, teamwork, and management, ensuring they're prepared for the demands of the modern workforce."
+  },
   "events": {
     "name": "eventName",
     "logo": "https://www.iconparkorlando.com/wp-content/uploads/cropped-Icon-Park-Primary-Alternate-Horizontal-Registered-01-1.png",
@@ -85,7 +85,7 @@
       "Monday",
       "00:00PM"
     ],
-    "vision":"Our vision is to cultivate a generation of students who excel as critical thinkers, proficient leaders, innovators, and experts across diverse fields of science and technology.",
+    "vision": "Our vision is to cultivate a generation of students who excel as critical thinkers, proficient leaders, innovators, and experts across diverse fields of science and technology.",
     "mission": "Our mission begins with a deep understanding of the contemporary job market's demands and the skills required from graduates to meet those demands. We then strive to bridge the skills gap by establishing a sustainable program that addresses the ever-expanding divide between graduates' skillsets and the job market's requirements, particularly those skills that the university curriculum may overlook.",
     "goals": "Some quick example text to build on the card title and make up the bulk of the card's content.",
     "sessions": "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -237,7 +237,7 @@
         {
           "name": "Mechanical Engineering",
           "img": "./images/cards/ras/Mechanical-Engineering.png",
-          "description": "In the Mechanical Engineering track, we are learning the foundational skills essential for mechanical engineering development. We are learning comprehensive design principles using SolidWorks and AutoCAD, mastering tools for conceptualization and detailed engineering. We are exploring material science, focusing on material selection and differentiation techniques critical for optimizing mechanical performance. We are studying robotics kinematics and dynamics, analyzing the motion principles and dynamic behavior of robotic arms. We are utilizing simulation and analysis tools like Ansys Fluent for stress analysis and safety evaluations, ensuring robust design integrity. We are gaining insights into manufacturing techniques, including principles for laser cutting and 3D printing, and applying them in design and manufacturing processes.\nThis track provides comprehensive training in mechanical design, materials science, robotics dynamics, simulation, and advanced manufacturing techniques, preparing us for a career in mechanical engineering and innovation."
+          "description": "In the Mechanical Design track, we are learning the foundational skills essential for mechanical engineering development. We are learning comprehensive design principles using SolidWorks and AutoCAD, mastering tools for conceptualization and detailed engineering. We are exploring material science, focusing on material selection and differentiation techniques critical for optimizing mechanical performance. We are studying robotics kinematics and dynamics, analyzing the motion principles and dynamic behavior of robotic arms. We are utilizing simulation and analysis tools like Ansys Fluent for stress analysis and safety evaluations, ensuring robust design integrity. We are gaining insights into manufacturing techniques, including principles for laser cutting and 3D printing, and applying them in design and manufacturing processes.\nThis track provides comprehensive training in mechanical design, materials science, robotics dynamics, simulation, and advanced manufacturing techniques, preparing us for a career in mechanical engineering and innovation."
         },
         {
           "name": "Embedded Systems Track",
@@ -279,7 +279,7 @@
       },
       "team": [
         {
-          "name": "Moustafa Mohamed",
+          "name": "Mustafa Mohamed",
           "position": "chairman",
           "img": "./images/committees/Team/PES/Mustafa Mohamed.jpeg"
         }
@@ -287,22 +287,22 @@
       "tracks": [
         {
           "name": "Distribution",
-          "img": "./images/cards/pes/DISTRIBUTION (1).png",
+          "img": "./images/cards/pes/Distribution-Track.png",
           "description": "Basic Distribution includes transformers, load estimation, power systems, short circuit and voltage drop calculations, distribution panel design, cable and breaker selection, load diagrams (SLD), grounding systems, and lightning protection. Advanced Distribution focuses on project planning, cable routing, selecting cable trays and ducts, and light current systems like CCTV, data communication, fire alarms, nurse call systems, BMS, and access control. It also involves shop drawing, Revit, and low current system expertise."
         },
         {
           "name": "Automation",
-          "img": "./images/cards/pes/AUTOMATION (1).png",
+          "img": "./images/cards/pes/Automation-Track.png",
           "description": "The automation track starts with basic control theories, industrial components, and system design, covering transformers, load estimation, power distribution, and protection systems. It includes PLC programming with Siemens PLCs using TIA Portal and Factory IO simulations. Advanced topics cover project planning, cable management, light current systems (CCTV, fire alarms), advanced PLC programming, HMI programming, communication protocols, SCADA, and IIOT applications, culminating in the integration of these elements into complete industrial system solutions."
         },
         {
           "name": "Mechanical energy",
-          "img": "./images/cards/pes/MECHNICAL (1).png",
+          "img": "./images/cards/pes/Mechanical-Track.png",
           "description": "In this track, we learn how to generate renewable energy through various methods. For wind turbines, we explore their components, working mechanisms, energy production, component selection, and material differences. In solar energy, we cover the components of a solar network, designing batteries and panels, and using them for energy production and storage. Additionally, we delve into generating green hydrogen from water (H2O)."
         },
         {
           "name": "Smart Homes",
-          "img": "./images/cards/pes/SMART (1).png",
+          "img": "./images/cards/pes/Smart-Home.png",
           "description": "In this track, we are learning how to connect homes through various protocols like KNX, Z-Wave, Zigbee, Wi-Fi, and Bluetooth. Also, Exploring different protocols, whether open or closed, in both wireless and wired setups. Also, we are learning how to program KNX devices using ETS and showcase it with KNX Virtual.      \n"
         }
       ],
@@ -501,14 +501,158 @@
   "about-us": {},
   "contact-us": {},
   "mutex": {
-    "years": [
-      2018,
-      2019,
-      2020,
-      2024
-    ],
+    "years": {
+      "2017": {
+        "title": "Mutex 2017",
+        "imgLink": "./images/backgrounds/Mutex/Mutex-2017.jpg",
+        "text": "The first edition of MUTEX marked the launch of the Computer Society Zagazig Chapter. This groundbreaking event introduced new technical topics to over 350 attendees, targeting engineers with majors in Computer Science and Communication. For the first time in Zagazig, the event partnered with many multinational companies, providing an unparalleled platform for knowledge and networking."
+      },
+      "2018": {
+        "title": "Mutex 2018",
+        "imgLink": "./images/backgrounds/Mutex/Mutex-2018.jpg",
+        "text": "The second edition of MUTEX expanded significantly, with over 1100 registered participants and space for more than 550 attendees. MUTEX'18 covered new tracks from IEEE Future Directions, attracting top sponsors and media partners. The National Telecommunication Regulatory Authority (NTRA) was our main sponsor, with Vodafone as our golden sponsor, alongside more than five media partners. As we grow older, the event grows bigger with us and our partners."
+      },
+      "2019": {
+        "title": "Mutex 2019",
+        "imgLink": "./images/backgrounds/Mutex/Mutex-2019.jpg",
+        "text": "The third edition of MUTEX expanded significantly, with over 1880 registered participants and space for more than 680 attendees. MUTEX'19 covered five new topics from IEEE Future Directions through talks and hands-on workshops. The event featured a panel discussion with tech startups sharing their success stories and a talk about Technology Innovation & Entrepreneurship Center programs for youth."
+      }
+    },
     "landing": {
-      "img": "./images/backgrounds/mutex-hero.png"
+      "img": "./images/backgrounds/Mutex/mutex-hero.png"
+    },
+    "sponsors": {
+      "Mutex-2017": {
+        "official": [
+          {
+            "name": "Main Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/17/Official Partner.png"
+          }
+        ],
+        "content": [
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/17/Content Partner.png"
+          },
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/17/Content Partner(1).png"
+          },
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/17/Content Partner(2).png"
+          },
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/17/Content Partner(3).png"
+          }
+        ],
+        "other": [
+        ]
+      },
+      "Mutex-2018": {
+        "official": [
+          {
+            "name": "Official Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Official Partner.png"
+          }
+        ],
+        "other": [
+          {
+            "name": "Gold Sponsor",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Gold Sponsor.png"
+          },
+          {
+            "name": "Gold Sponsor",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Gold Sponsor(1).png"
+          },{
+            "name": "Community Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Community Partner.png"
+          }
+        ],
+        "content": [
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Content Partner.png"
+          },
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Content Partner(1).png"
+          },          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Content Partner(2).png"
+          },{
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/18/Content Partner(3).png"
+          }
+        ]
+      },
+      "Mutex-2019": {
+        "official": [
+          {
+            "name": "Official Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Official Partner.png"
+          }
+        ],
+        "content": [
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Content Partner.png"
+          },
+          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Content Partner(1).png"
+          },          {
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Content Partner(2).png"
+          },{
+            "name": "Content Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Content Partner(3).png"
+          }
+        ],
+        "other": [
+          {
+            "name": "Catering Sponsor",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Catering Sponsor.png"
+          },
+          {
+            "name": "Hosting Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Hosting Partner.png"
+          },{
+            "name": "Startup Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Startup Partner.png"
+          },{
+            "name": "Startup Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Startup Partner(1).png"
+          },{
+            "name": "Hosting Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Strategic Partner.png"
+          },{
+            "name": "Hosting Partner",
+            "imgLink": "./images/backgrounds/Mutex/sponsors/19/Transportation Partner.png"
+          }
+        ]
+      }
+    },
+    "competitions": {
+      "Eco-E": {
+        "title": "Eco-E",
+        "description": "Eco-E is a competition that aims to raise awareness about the importance of renewable energy and its impact on the environment. Participants are challenged to design and build an eco-friendly vehicle powered by renewable energy sources. The competition encourages creativity, innovation, and sustainability, inspiring students to explore alternative energy solutions and reduce their carbon footprint.",
+        "image": "./images/backgrounds/Mutex/Competitions/Eco-E.png",
+        "alt":"Eco-E"
+      },
+      "Semaphore": {
+        "title": "Semaphore",
+        "description": "Semaphore is problem-solving competition that challenges participants to solve a series of coding problems within a limited time frame. The competition tests their analytical thinking, algorithmic skills, and coding proficiency, providing a platform to showcase their problem-solving abilities and compete with their peers. Participants have the opportunity to enhance their coding skills, learn new techniques, and gain valuable experience in a competitive environment.",
+        "image": "./images/backgrounds/Mutex/Competitions/Semaphore.png",
+        "alt":"Semaphore"
+      },
+      "Fire Fighting": {
+        "title": "Fire Fighting",
+        "description": "Fire Fighting is a competition that challenges participants to design and build a fire-fighting robot capable of extinguishing flames in a simulated environment. The competition tests their engineering skills, problem-solving abilities, and technical knowledge, providing a platform to showcase their creativity and innovation. Participants have the opportunity to apply their theoretical knowledge in a practical setting, learn new skills, and gain valuable experience in robotics and automation.",
+        "image": "./images/backgrounds/Mutex/Competitions/FireFighting.png",
+        "alt":"FireFighting"
+      }
     }
   },
   "social": [
