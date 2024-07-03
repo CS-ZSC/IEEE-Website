@@ -8,7 +8,7 @@
 import HorizantalCard from '../Home/HomeCards/CardsTemplates/HorizantalCard'
 
 export default {
-  name: "MutexBreif",
+  name: "MutexBrief",
   components: {
     HorizantalCard,
   },

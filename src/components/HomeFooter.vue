@@ -43,7 +43,7 @@
       </b-row>
       <b-row class="text-center">
         <b-col>
-          <p class="m-0 p-0" style="font-size: small">© Create by CS Chapter of IEEE ZSB 2024</p>
+          <p class="m-0 p-0" style="font-size: small">© Created by CS Chapter of IEEE ZSB 2024</p>
         </b-col>
       </b-row>
     </b-container>

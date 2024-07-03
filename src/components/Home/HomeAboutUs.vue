@@ -7,8 +7,8 @@
       <hr>
     </b-row>
     <p style="justify-content: center !important;align-content: center ">{{ about }}</p>
-    <b-row align-h="center">
-      <b-col md="4" sm="6" cols="auto" class=" text-center">
+    <b-row align-h="center" class="d-flex justify-content-around">
+      <b-col md="6" sm="6" cols="auto" class="text-center d-flex flex-column">
         <b-card data-aos="fade-up"
                 title="Our Vision"
                 title-tag="h3"
@@ -16,14 +16,13 @@
                 img-alt="Image"
                 img-top
                 tag="article"
-                style="max-width: 100%;"
-                class="mb-3 mt-5 card border-0">
+                class="mb-3 mt-5 card border-0 flex-fill">
           <b-card-text class="text-left">
             {{ vision_text }}
           </b-card-text>
         </b-card>
       </b-col>
-      <b-col md="4" sm="6" cols="auto" class=" text-center">
+      <b-col md="6" sm="6" cols="auto" class="text-center d-flex flex-column">
         <b-card data-aos="fade-up"
                 title="Our Mission"
                 title-tag="h3"
@@ -31,21 +30,17 @@
                 img-alt="Image"
                 img-top
                 tag="article"
-                style="max-width: 100%;"
-                class="mb-3 mt-5 card border-0">
+                class="mb-3 mt-5 card border-0 flex-fill">
           <b-card-text class="text-left">
             {{ mission_text }}
           </b-card-text>
         </b-card>
       </b-col>
     </b-row>
-
   </b-container>
-
 </template>
 
 <script>
-
 import json from '../../../database/database'
 
 export default {
@@ -85,6 +80,13 @@ hr {
   border-width: 5px;
   border-radius: 16px;
   background-color: #002855;
+}
+
+.card {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 1000px) {
