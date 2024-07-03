@@ -2,7 +2,7 @@
   <div class="navigation">
     <!-- NOTICE when changing toggleable you will have to change number of pixels below for animation -->
     <b-navbar toggleable="lg" class="dark-nav" type="dark" >
-      <b-navbar-brand tabindex="0" class="text" to="/"><img src="../../public/logo.svg"></b-navbar-brand>
+      <b-navbar-brand tabindex="0" class="text" to="/"><img src="../../public/logo.svg" alt="logo"></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
