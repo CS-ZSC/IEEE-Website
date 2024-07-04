@@ -236,16 +236,16 @@
         },
         {
           "name": "Mechanical Engineering",
-          "img": "./images/cards/ras/Mechanical-Engineering.png",
+          "img": "./images/cards/ras/Mechanical-Design.png",
           "description": "In the Mechanical Design track, we are learning the foundational skills essential for mechanical engineering development. We are learning comprehensive design principles using SolidWorks and AutoCAD, mastering tools for conceptualization and detailed engineering. We are exploring material science, focusing on material selection and differentiation techniques critical for optimizing mechanical performance. We are studying robotics kinematics and dynamics, analyzing the motion principles and dynamic behavior of robotic arms. We are utilizing simulation and analysis tools like Ansys Fluent for stress analysis and safety evaluations, ensuring robust design integrity. We are gaining insights into manufacturing techniques, including principles for laser cutting and 3D printing, and applying them in design and manufacturing processes.\nThis track provides comprehensive training in mechanical design, materials science, robotics dynamics, simulation, and advanced manufacturing techniques, preparing us for a career in mechanical engineering and innovation."
         },
         {
-          "name": "Embedded Systems Track",
+          "name": "Embedded Systems",
           "img": "./images/cards/ras/Embedded-Systems.png",
           "description": "In the Embedded Systems track, we are learning the foundational skills essential for embedded system development. We are mastering C programming, progressing from basic to advanced levels crucial for embedded system development. We are gaining insights into computer architecture and the operational principles of systems and controllers. We are learning to program microcontrollers like AVR, Tiva C, and STM32, mastering their applications in embedded systems. We are exploring communication protocols, and handling them to effectively interact with diverse devices and components. We are engaging in practical projects to solidify our skills and apply them in real-world embedded systems applications.\nThis track provides comprehensive knowledge and practical skills essential for succeeding in embedded systems, preparing us for roles in electronics, IoT, robotics, and beyond.\n"
         },
         {
-          "name": "Robot Operating System (ROS) Track",
+          "name": "Robot Operating System (ROS)",
           "img": "./images/cards/ras/Robot-Operating-System.png",
           "description": "In the ROS track, we are learning the foundational skills essential for robot programming and control. We are utilizing ROS libraries, exploring and leveraging them to build autonomous robots. We are designing and simulating robots using URDF and Rviz, focusing on the development of Rovers, Minesweepers, and Self-Driving Cars.\nThis track provides essential skills in programming, library utilization, and robot design, preparing us to innovate in autonomous vehicles, industrial automation, and beyond in the dynamic field of robotics.\n"
         }
@@ -296,7 +296,7 @@
           "description": "The automation track starts with basic control theories, industrial components, and system design, covering transformers, load estimation, power distribution, and protection systems. It includes PLC programming with Siemens PLCs using TIA Portal and Factory IO simulations. Advanced topics cover project planning, cable management, light current systems (CCTV, fire alarms), advanced PLC programming, HMI programming, communication protocols, SCADA, and IIOT applications, culminating in the integration of these elements into complete industrial system solutions."
         },
         {
-          "name": "Mechanical energy",
+          "name": "Mechanical Energy",
           "img": "./images/cards/pes/Mechanical-Track.png",
           "description": "In this track, we learn how to generate renewable energy through various methods. For wind turbines, we explore their components, working mechanisms, energy production, component selection, and material differences. In solar energy, we cover the components of a solar network, designing batteries and panels, and using them for energy production and storage. Additionally, we delve into generating green hydrogen from water (H2O)."
         },
@@ -648,7 +648,7 @@
         "alt":"Semaphore"
       },
       "Fire Fighting": {
-        "title": "Formula Firefighting Competition",
+        "title": "Formula Firefighting",
         "description": "Fire Fighting is a competition that challenges participants to design and build a fire-fighting robot capable of extinguishing flames in a simulated environment. The competition tests their engineering skills, problem-solving abilities, and technical knowledge, providing a platform to showcase their creativity and innovation. Participants have the opportunity to apply their theoretical knowledge in a practical setting, learn new skills, and gain valuable experience in robotics and automation.",
         "image": "./images/backgrounds/Mutex/Competitions/FireFighting.png",
         "alt":"FireFighting"
