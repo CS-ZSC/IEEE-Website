@@ -235,7 +235,7 @@
           "description": "In the AI track, we are learning the foundational skills in Python programming essential for AI development. We are learning comprehensive data preparation, cleaning, visualization, and advanced processing techniques. We are creating robust data models and programming machines for autonomous decision-making. We are exploring advanced neural network algorithms enabling autonomous learning and adaptation.\nThis track provides essential skills in Python programming, data analysis, machine learning, and deep learning, empowering us to innovate in AI applications across diverse industries, with a special focus on computer vision and robotics. We are delving into image and video processing, sensor integration, and real-time decision-making, enabling the development of intelligent robotic systems capable of performing complex tasks autonomously."
         },
         {
-          "name": "Mechanical Engineering",
+          "name": "Mechanical Design",
           "img": "./images/cards/ras/Mechanical-Design.png",
           "description": "In the Mechanical Design track, we are learning the foundational skills essential for mechanical engineering development. We are learning comprehensive design principles using SolidWorks and AutoCAD, mastering tools for conceptualization and detailed engineering. We are exploring material science, focusing on material selection and differentiation techniques critical for optimizing mechanical performance. We are studying robotics kinematics and dynamics, analyzing the motion principles and dynamic behavior of robotic arms. We are utilizing simulation and analysis tools like Ansys Fluent for stress analysis and safety evaluations, ensuring robust design integrity. We are gaining insights into manufacturing techniques, including principles for laser cutting and 3D printing, and applying them in design and manufacturing processes.\nThis track provides comprehensive training in mechanical design, materials science, robotics dynamics, simulation, and advanced manufacturing techniques, preparing us for a career in mechanical engineering and innovation."
         },
@@ -636,21 +636,21 @@
     },
     "competitions": {
       "Eco-E": {
-        "title": "Eco-E",
-        "description": "Eco-E is a competition that aims to raise awareness about the importance of renewable energy and its impact on the environment. Participants are challenged to design and build an eco-friendly vehicle powered by renewable energy sources. The competition encourages creativity, innovation, and sustainability, inspiring students to explore alternative energy solutions and reduce their carbon footprint.",
-        "image": "./images/backgrounds/Mutex/Competitions/Eco-E.png",
+        "title": "ECO-ENTREPRENEURSHIP",
+        "description": "ECO_E is a competition targeting green projects, with a different theme every year. This year’s theme, \"Unlock the Future of Urban Living,\" focuses on smart cities. We seek innovative solutions for a smarter future. As our world rapidly transforms, we aim to enhance urban living through smart technology and big data, promoting global economic growth",
+        "image": "./images/backgrounds/Mutex/Competitions/Eco-E.jpg",
         "alt":"Eco-E"
       },
       "Semaphore": {
         "title": "Semaphore",
         "description": "Semaphore is problem-solving competition that challenges participants to solve a series of coding problems within a limited time frame. The competition tests their analytical thinking, algorithmic skills, and coding proficiency, providing a platform to showcase their problem-solving abilities and compete with their peers. Participants have the opportunity to enhance their coding skills, learn new techniques, and gain valuable experience in a competitive environment.",
-        "image": "./images/backgrounds/Mutex/Competitions/Semaphore.png",
+        "image": "./images/backgrounds/Mutex/Competitions/Semaphore.jpg",
         "alt":"Semaphore"
       },
       "Fire Fighting": {
         "title": "Formula Firefighting",
         "description": "Fire Fighting is a competition that challenges participants to design and build a fire-fighting robot capable of extinguishing flames in a simulated environment. The competition tests their engineering skills, problem-solving abilities, and technical knowledge, providing a platform to showcase their creativity and innovation. Participants have the opportunity to apply their theoretical knowledge in a practical setting, learn new skills, and gain valuable experience in robotics and automation.",
-        "image": "./images/backgrounds/Mutex/Competitions/FireFighting.png",
+        "image": "./images/backgrounds/Mutex/Competitions/FireFighting.jpg",
         "alt":"FireFighting"
       }
     }
