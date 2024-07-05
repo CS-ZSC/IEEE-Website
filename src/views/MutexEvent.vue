@@ -15,7 +15,7 @@
     <div class="space"/>
 
     <!-- Conditionally render MutexSponsors based on screen width -->
-    <MutexSponsors v-if="!isMobile" />
+    <MutexSponsors v-if="!isMobile"/>
 
     <!-- <mutex-speakers/> -->
 
@@ -57,8 +57,7 @@ export default {
   },
   methods: {
     handleRegisterClick() {
-      console.log('Clicked Register Now block');
-      // Implement registration logic here
+      window.open("https://ieee-zsb-mutex.com/", "_blank");
     },
     checkScreenWidth() {
       this.isMobile = window.innerWidth <= 768; // Adjust breakpoint as per your design needs
