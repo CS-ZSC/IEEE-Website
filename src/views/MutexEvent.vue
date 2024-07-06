@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     handleRegisterClick() {
-      window.open("https://ieee-zsb-mutex.com/", "_blank");
+      window.open("https://forms.gle/HqANk9fyGM4NqT5K7", "_blank");
     },
     checkScreenWidth() {
       this.isMobile = window.innerWidth <= 768; // Adjust breakpoint as per your design needs
