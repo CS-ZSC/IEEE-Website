@@ -1,21 +1,29 @@
 <template>
   <div id="app">
-        <app-navigation/>
-        <transition name="fade" mode="out-in">
-          <router-view style="z-index:0; overflow:hidden"></router-view>
-        </transition>
-        <home-footer />
+    <app-navigation />
+    <transition name="fade" mode="out-in">
+      <router-view style="z-index:0; overflow:hidden"></router-view>
+    </transition>
+    <home-footer />
   </div>
 </template>
 
 <script>
 import AppNavigation from './components/AppNavigation.vue'
 import HomeFooter from './components/HomeFooter.vue'
+
 export default {
-  components: { 
+  components: {
     AppNavigation,
     HomeFooter
-   },
+  },
+  mounted() {
+    const path = localStorage.getItem('path');
+    if (path) {
+      localStorage.removeItem('path');
+      this.$router.push(path);
+    }
+  }
 }
 </script>
 
@@ -24,11 +32,13 @@ export default {
   margin: 0;
   padding: 0;
 }
+
 html, body {
   width: 100%;
   margin: 0;
   padding: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.3s;
@@ -38,6 +48,6 @@ html, body {
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 </style>
