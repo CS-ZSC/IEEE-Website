@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <app-navigation />
+    <app-navigation/>
     <transition name="fade" mode="out-in">
       <router-view style="z-index:0; overflow:hidden"></router-view>
     </transition>
-    <home-footer />
+    <home-footer/>
   </div>
 </template>
 
 <script>
 import AppNavigation from './components/AppNavigation.vue'
 import HomeFooter from './components/HomeFooter.vue'
+import router from './router'
 
 export default {
   components: {
@@ -21,7 +22,12 @@ export default {
     const path = localStorage.getItem('path');
     if (path) {
       localStorage.removeItem('path');
-      this.$router.push(path);
+      const resolved = router.resolve(path);
+      if (resolved.route.matched.length > 0) {
+        this.$router.push(path);
+      } else {
+        this.$router.push('/');
+      }
     }
   }
 }
