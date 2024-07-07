@@ -3,20 +3,20 @@
     <b-row data-aos="fade-up">
       <h2 class="centered-text font-weight-bold">Goals</h2>
     </b-row>
-    <b-row >
+    <b-row>
       <b-col>
         <expanding-line/>
       </b-col>
     </b-row>
-    <b-row class="pt-3">
-      <b-col md="6" class="px-0 px-md-3">
-        <div data-aos="fade-right" data-aos-delay="700">
-          <mutex-mission-card/>
+    <b-row class="pt-3 d-flex">
+      <b-col md="6" class="px-0 px-md-3 d-flex">
+        <div data-aos="fade-right" data-aos-delay="700" class="flex-fill">
+          <mutex-mission-card class="card-content"/>
         </div>
       </b-col>
-      <b-col md="6" class="px-0 px-md-3">
-        <div data-aos="fade-left" data-aos-delay="700">
-          <mutex-vision-card/>
+      <b-col md="6" class="px-0 px-md-3 d-flex">
+        <div data-aos="fade-left" data-aos-delay="700" class="flex-fill">
+          <mutex-vision-card class="card-content"/>
         </div>
       </b-col>
     </b-row>
@@ -45,6 +45,12 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 @media (min-width: 1000px) {
